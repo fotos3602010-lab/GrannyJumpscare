@@ -1,0 +1,17 @@
+<div id="mensaje" style="color:white; background:black; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;" onclick="susto()">
+  <h2>Cargando contenido...</h2>
+  <p>Toca la pantalla para continuar</p>
+</div>
+
+<img id="foto" src=https://media.tenor.com/5UtLtDhkBc4AAAAM/foxy-jump.gif" style="display:none; width:100vw; height:100vh; object-fit:cover; position:fixed; top:0; left:0;">
+
+<audio id="ruido" src="https://www.myinstants.com/media/sounds/five-nights-at-freddys-2-full-scream-sound.mp3" volume="1.0" 
+  preload="auto"></audio>
+
+<script>
+function susto() {
+  document.getElementById('mensaje').style.display = 'none';
+  document.getElementById('foto').style.display = 'block';
+ document.getElementById('ruido').volume = 1.0; document.getElementById('ruido').play();
+}
+    </script>
